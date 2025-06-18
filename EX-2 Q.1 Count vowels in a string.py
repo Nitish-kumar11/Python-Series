@@ -1,9 +1,9 @@
 a = input("Enter a string: ")
 vowels = "aeiouAEIOU"
-count = 0
+counts = 0
 
 for char in a:
     if char in vowels:
-        count += 1
+        counts += 1
 
-print("Number of vowels:", count)
+print("Number of vowels:", counts)
