@@ -1,3 +1,3 @@
-num = "123"
-num = int(num)
-print(num + 10)  
+number = "123"
+number = int(number)
+print(number + 10)  
