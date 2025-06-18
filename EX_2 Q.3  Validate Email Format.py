@@ -1,7 +1,7 @@
 email = input("Enter your email: ")
 
 if " " in email:
-    print("Invalid Email: contains space")
+    print("Its Invalid Email: contains space")
 elif "@" in email and "." in email:
     at_index = email.index("@")
     dot_index = email.rindex(".")
