@@ -1,4 +1,4 @@
 a = 5
 b = 10
-sum = a + b
-print(sum)  
+sums = a + b
+print(sums)  
