@@ -1,4 +1,4 @@
-celsius = float(input("Enter temperature in Celsius: "))
-fahrenheit = (celsius * 9/5) + 32
-
-print("Temperature in Fahrenheit:", fahrenheit)
+birth=int(input("enter the birth year:"))
+today=2025
+age=today-birth
+print("your age is :", age)
