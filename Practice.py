@@ -1,8 +1,4 @@
-a=int(input("enter first number:"))
-b=int(input("enter second number:"))
-sum=a+b
-product=a*b
-diffrence=a-b
-print("sum of the number is:", sum)
-print("product of the number is:", product)
-print("diffrence of the number is:", diffrence)
+celsius = float(input("Enter temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+
+print("Temperature in Fahrenheit:", fahrenheit)
