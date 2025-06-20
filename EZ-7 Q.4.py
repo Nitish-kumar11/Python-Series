@@ -6,7 +6,7 @@ def check_for_line():
        while data:
           data= f.readline()
           if(word in data):
-             print("at line:", line_no)
+             print("at the line:", line_no)
              return
           line_no +=1
 
