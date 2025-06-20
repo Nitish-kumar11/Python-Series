@@ -1,14 +1,3 @@
-def check_for_word():
-  word="learning"
-  with open("practice.txt", "r") as f:
-    data= f.read()
-    if(data.find(word) !=-1):
-       print("Found")
-    else:
-       print("Not found")
-
-check_for_word()
-
 def check_for_line():
     word="learning"
     data=True
