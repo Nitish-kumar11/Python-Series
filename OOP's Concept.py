@@ -1,10 +1,11 @@
 class car:
    
-    def __init__(self, fullname):
-        self.brand= fullname
+    def __init__(self, name, price ):
+        self.brand= name
+        self.price= price
         print("adding new car..")
-car1= car("BMW")
-print(car1.brand)
+car1= car("BMW", "2.5CR")
+print(car1.brand, car1.price)
 
-car2= car("Audi")
-print(car2.brand)
+car2= car("Audi", "2.7CR")
+print(car2.brand, car2.price)
