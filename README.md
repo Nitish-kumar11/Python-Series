@@ -1,6 +1,6 @@
 # 🐍 Python Practice Problems
 
-Welcome to my Python Practice Repository! This repository contains a growing collection of Python programming problems that I've solved during my learning journey. The problems are from various sources including online tutorials, class assignments, and coding platforms.
+Welcome to my Python Practice Repository. This repository contains a growing collection of Python programming problems that I have solved during my learning journey. The problems are from various sources including online tutorials, online Pdf's notes, and coding platforms.
 
 ## 📚 About
 
@@ -22,14 +22,7 @@ The files are organized by topic or type of question. Some categories you might 
 
 ## 🛠️ Technologies Used
 
-- **Language:** Python 3.x
+- **Language:** Python 
 - **Tools:** VS Code, GitHub
 
-## 🚀 Getting Started
 
-To explore or run any code:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Nitish-kumar11/python-practice.git
-   cd python-practice
