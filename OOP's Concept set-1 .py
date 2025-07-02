@@ -1,3 +1,4 @@
+
 ###### CONSTRUCTOR IN PYTHON 
 
 class car:
@@ -49,4 +50,34 @@ class student:
         self.marks=marks
 
 S1=student("Nitish kumar", 81) 
-print(S1.name, S1.marks) # here name does't print anonymous because object attribute precedence is always high than class attribute 
+print(S1.name, S1.marks) # here name does't print anonymous because object attribute > class attribute 
+print()
+
+
+
+
+
+
+####-----METHODS-------  #####
+
+
+# Define a class
+class Student:
+    
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # Method to display student details
+    def display_info(self):
+        print("Student Name:", self.name)
+        print("Student Age:", self.age)
+
+
+student1 = Student("Nitish", 23)
+student2 = Student("Nicky", 22)
+
+
+student1.display_info()
+print()  # for spacing
+student2.display_info()
