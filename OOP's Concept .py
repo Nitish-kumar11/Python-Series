@@ -142,3 +142,19 @@ print(p.get_name())
 
 p.set_name("Shradha")
 print(p.get_name()) 
+print()
+
+
+
+
+######-----del keyworf----######
+
+
+class Student:
+    
+    def __init__(self, name):
+        self.name = name
+student1= Student("Nitish kumar")
+
+del student1
+print(student1)
