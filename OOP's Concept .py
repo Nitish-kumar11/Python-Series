@@ -202,3 +202,32 @@ player = CricketPlayer("Nitish kumar")
 player.add_runs(269)
 player.show_runs()
 player.show_message()
+
+print()
+
+
+
+
+#####--------INHERITANCE------#####
+
+
+class Car:
+    color="Black"
+    @staticmethod
+    def start():
+        print("car started..")
+
+    def stop():
+        print("car stoped..") 
+
+class Toyotacar(Car):
+    def __init__(self, name):
+        self.name=name
+
+
+Car1=Toyotacar("Fortuner")
+Car2=Toyotacar("Innova")
+
+print("Car name is:",Car1.name, "\nCar colour is:", Car.color)
+Car1.start()
+print("And the", Car1.start())
