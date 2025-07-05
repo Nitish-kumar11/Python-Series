@@ -176,3 +176,29 @@ class Account:
 account1= Account(92834566 , 6439982983456 )
 print(account1.account_no)
 print(account1.reset_pass)
+
+#one more example 
+
+class CricketPlayer:
+    def __init__(self, name):
+        self.name = name         # Public attribute
+        self.__runs = 0          # Private attribute
+
+    def add_runs(self, score):
+        self.__runs += score
+        print(self.name, "scored", score, "runs.")
+
+    def show_runs(self):
+        print("Total runs by", self.name, ":", self.__runs)
+
+    def __secret_message(self):  # Private method
+        print("This is a private message for", self.name)
+
+    def show_message(self):
+        self.__secret_message()  # Call private method inside class
+
+player = CricketPlayer("Nitish kumar")
+
+player.add_runs(269)
+player.show_runs()
+player.show_message()
