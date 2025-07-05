@@ -22,27 +22,33 @@ print()
 
 # Q.  create account class with 2 attributes-balance & account number. 
 
-class Account :
-    def __init__(self,bal, acc ):
-        self.balance=bal
-        self.account_no=acc
+class Account:
+    # Constructor 
+    def __init__(self, bal, acc):
+        self.balance = bal          
+        self.account_no = acc        
 
+    # Method to deduct (debit) 
     def debit(self, amount):
-        self.balance -= amount
-        print("RS:",amount, "was debited")
-        print("Total balance is=", self.get_balance())
+        self.balance -= amount       
+        print("RS", amount, "was debited")   # Display debit info
+        print("Total balance is=", self.get_balance())  # Show updated balance
 
+    # Method to add (credit) 
     def credit(self, amount):
-        self.balance += amount
-        print("RS:",amount, "was credited")
-        print("Total balance is=", self.get_balance())
+        self.balance += amount      
+        print("RS", amount, "was credited")   # Display credit info
+        print("Total balance is=", self.get_balance())  # Show updated balance
 
+    # Method to return the current balance
     def get_balance(self):
-        return self.balance    
+        return self.balance          
 
-Acc1= Account(4327, 69236489276)   
-Acc1.debit(1199) 
+
+Acc1 = Account(4327, 69236489276)
+Acc1.debit(1199)
 Acc1.credit(1473)
+
 
 
 
