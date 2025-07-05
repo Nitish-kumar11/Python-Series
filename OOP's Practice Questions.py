@@ -27,14 +27,24 @@ class Account :
         self.balance=bal
         self.account_no=acc
 
-    def debit(slef, amount):
-        slef.balance-=Account
+    def debit(self, amount):
+        self.balance -= amount
         print("RS:",amount, "was debited")
+        print("Total balance is=", self.get_balance())
 
-    def credit(slef, amount):
-        slef.balance-=Account
-        print("RS:",amount, "was debited")
+    def credit(self, amount):
+        self.balance += amount
+        print("RS:",amount, "was credited")
+        print("Total balance is=", self.get_balance())
+
+    def get_balance(self):
+        return self.balance    
 
 Acc1= Account(4327, 69236489276)   
-print("Your current account balance is:",Acc1.balance)   
-print("Your accounut number is:",Acc1.account_no) 
+Acc1.debit(1199) 
+Acc1.credit(1473)
+
+
+
+
+
