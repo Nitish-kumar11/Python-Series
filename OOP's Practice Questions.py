@@ -19,9 +19,8 @@ print()
 
 
 
-
-# Q.  create account class with 2 attributes-balance & account number. 
-
+''' Q.  1> create account class with 2 attributes-balance & account number.
+        2> creatw mwthods for debit, credit and printing the balance'''
 class Account:
     # Constructor 
     def __init__(self, bal, acc):
