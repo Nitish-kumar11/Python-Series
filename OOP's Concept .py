@@ -156,7 +156,7 @@ class Student:
         self.name = name
 student1= Student("Nitish kumar")
 
-
+del student
 print(student1)
 
 
@@ -175,4 +175,4 @@ class Account:
 
 account1= Account(92834566 , 6439982983456 )
 print(account1.account_no)
-print(account1.reset_pass)     
+print(account1.reset_pass)
