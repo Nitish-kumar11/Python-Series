@@ -158,3 +158,19 @@ student1= Student("Nitish kumar")
 
 del student1
 print(student1)
+
+
+
+
+####-----private(like) attributes & methods-----#####
+
+
+class Account:
+    def __init__(self, account_no, account_pass):
+        self.account_no=account_no
+        self.__account_pass=account_pass  # use "__ to the attribute to make is priavte in the class "
+
+
+account1= Account(92834566 , 6439982983456 )
+print(account1.account_no)
+print(account1.account_pass)     
