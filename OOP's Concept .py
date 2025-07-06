@@ -210,9 +210,8 @@ print()
 
 #####--------INHERITANCE------#####
 
-
+#single inheritance 
 class Car:
-    color="Black"
     @staticmethod
     def start():
         print("car started..")
@@ -228,6 +227,51 @@ class Toyotacar(Car):
 Car1=Toyotacar("Fortuner")
 Car2=Toyotacar("Innova")
 
-print("Car name is:",Car1.name, "\nCar colour is:", Car.color)
+print("Car name is:",Car1.name)
 Car1.start()
 print("And the", Car1.start())
+print()
+
+
+#multi-level inheritance 
+class Car:
+    @staticmethod
+    def start():
+        print("car started..")
+
+    def stop():
+        print("car stoped..") 
+
+class MarutiSuzuki(Car):
+    def __init__(self, brand):
+        self.brand=brand
+
+class Swift():
+    def __init__(self, type):
+        self.type=type
+
+car1=MarutiSuzuki("diesel")
+car1.start()
+car1=Swift("Nice car")
+car1.type
+
+
+
+#multiple inheritence 
+
+class A:
+    varA="Welcome to class A"
+
+class B:
+    varB="Welcome to class B"  
+
+class C(A,B):
+    varC="Welcome ot class C"
+
+C1=C()
+
+print(C1.varA)
+print(C1.varB)
+print(C1.varC)
+
+ 
