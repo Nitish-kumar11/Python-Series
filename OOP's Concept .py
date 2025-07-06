@@ -274,4 +274,25 @@ print(C1.varA)
 print(C1.varB)
 print(C1.varC)
 
- 
+#one more example of multiple inheritance
+# Parent class 1
+class Father:
+    def skills(self):
+        print("Father: Gardening, Cooking")
+
+# Parent class 2
+class Mother:
+    def skills(self):
+        print("Mother: Painting, Singing")
+
+#---Child class inherits from both Father and Mother
+class Child(Father, Mother):
+    def skills(self):
+        print("\nChild has skills from both parents:")
+        Father.skills(self)
+        Mother.skills(self)
+        print("Child: Coding")
+
+
+c = Child()
+c.skills()
