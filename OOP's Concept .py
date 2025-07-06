@@ -147,6 +147,9 @@ print()
 
 
 
+
+
+
 ######-----del keyworf----######
 
 
@@ -158,6 +161,10 @@ student1= Student("Nitish kumar")
 
 del student
 print(student1)
+
+
+
+
 
 
 
@@ -204,6 +211,11 @@ player.show_runs()
 player.show_message()
 
 print()
+
+
+
+
+
 
 
 
@@ -296,3 +308,32 @@ class Child(Father, Mother):
 
 c = Child()
 c.skills()
+
+
+
+
+
+
+
+
+#####-----Super Method-----##### use to access methods of the parent class
+
+class Car:
+    def __init__(self, type):
+        self.type=type
+
+    @staticmethod
+    def start():
+        print("car started..")
+
+    def stop():
+        print("car stoped..") 
+
+class MarutiSuzuki(Car):
+    def __init__(self, name,type):
+        super().__init__(type)
+        self.name=name
+        super().start()
+
+car1=MarutiSuzuki("Swift", "electric")
+print(car1.type)
