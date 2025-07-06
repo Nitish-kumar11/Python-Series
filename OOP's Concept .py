@@ -337,7 +337,7 @@ class MarutiSuzuki(Car):
 
 car1=MarutiSuzuki("Swift", "electric")
 print(car1.type)
-
+print()
 
 
 
@@ -350,10 +350,24 @@ print(car1.type)
 
 class person:
     name="anonymous"
-
-    def changename(self,name):
-        self.name=name
+    
+    @classmethod
+    def changename(cls,name):
+        cls.name=name
 
 P1=person()   
-P1.changename("\n Nitish Kumar") 
+P1.changename("Nitish Kumar") 
 print(P1.name)
+print(person.name)
+print()
+
+
+
+
+
+
+
+
+
+
+
