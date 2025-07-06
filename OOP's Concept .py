@@ -368,6 +368,14 @@ print()
 
 
 
+#####------Property Decorator------#####
 
+class Student:
+    def __init__(self,physics,chemistry,math):
+        self.physics=physics
+        self.chemistry=chemistry
+        self.math=math
+        self.percentage=str((self.physics + self.chemistry + self.math) /3 )+ "%"
 
-
+student1=Student(98,48,97)
+print(student1.percentage)
