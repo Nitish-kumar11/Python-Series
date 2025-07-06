@@ -376,6 +376,14 @@ class Student:
         self.chemistry=chemistry
         self.math=math
         self.percentage=str((self.physics + self.chemistry + self.math) /3 )+ "%"
+    
+    def calpercentage(self):
+        self.percentage=str((self.physics + self.chemistry + self.math) /3 )+ "%"
 
 student1=Student(98,48,97)
+print(student1.percentage)
+
+student1.physics=99
+print(student1.physics)
+student1.calpercentage()
 print(student1.percentage)
