@@ -408,9 +408,14 @@ class Complex:
         print(self.real,"i +", self.imaginary,"j")
 
 
-    def add(self, num2):
+    def __add__(self, num2):
         newReal=self.real + num2.real
         newImg=self.imaginary + num2.imaginary
+        return Complex(newReal, newImg)
+
+    def __sub__(self, num2):
+        newReal=self.real - num2.real
+        newImg=self.imaginary - num2.imaginary
         return Complex(newReal, newImg)   
 
 num1= Complex(1, 4)
@@ -419,5 +424,5 @@ num1.Shownumber()
 num2= Complex(4,6)
 num2.Shownumber()
 
-num3= num1.add(num2)
+num3= num1.__sub__(num2)
 num3.Shownumber()
