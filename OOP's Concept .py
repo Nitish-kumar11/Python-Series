@@ -386,3 +386,26 @@ print(student1.percentage)
 
 student1.physics=99
 print(student1.percentage)
+print()
+
+
+
+
+
+
+
+
+
+
+    #######--------Polymorphism: operator overloading 
+
+class Complex:
+    def __init__(self, real, imaginary):
+        self.real=real
+        self.imaginary=imaginary
+
+    def Shownumber(self):
+        print(self.real,"i +", self.imaginary,"j")
+
+num1= Complex(11, 34)
+num1.Shownumber()            
