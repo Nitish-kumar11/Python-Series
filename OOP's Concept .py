@@ -407,5 +407,17 @@ class Complex:
     def Shownumber(self):
         print(self.real,"i +", self.imaginary,"j")
 
-num1= Complex(11, 34)
-num1.Shownumber()            
+
+    def add(self, num2):
+        newReal=self.real + num2.real
+        newImg=self.imaginary + num2.imaginary
+        return Complex(newReal, newImg)   
+
+num1= Complex(1, 4)
+num1.Shownumber()
+
+num2= Complex(4,6)
+num2.Shownumber()
+
+num3= num1.add(num2)
+num3.Shownumber()
