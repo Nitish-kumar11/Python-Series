@@ -96,6 +96,11 @@ class Employee:
         print("Employee Deparment=", self.department)
         print("Employee salary=", self.salary)
 
+class Engineer(Employee):
+        def __init__(self, name, age):
+            self.name=name
+            self.age=age
+            super().__init__("Engineer", "IT", "24,00,000")
 
-Emp1=Employee("Manager", "IT", "11,00,000 P/A")
-Emp1.showDetails()
+Eng1= Engineer("Nitish", "23")
+Eng1.showDetails()
