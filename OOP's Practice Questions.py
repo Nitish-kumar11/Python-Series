@@ -75,3 +75,27 @@ class Circle:
 Car1=Circle(1)
 print("Area of circle is:",Car1.area()) 
 print("Parimeter of circle is:",Car1.parimeter())     
+print()
+
+
+
+
+# Q.
+''' Qs. Define a Employee class with attributes role, department & salary. This class also has a showDetails() method.
+        Create an Engineer class that inherits properties from Employee & attributes: name & age. '''
+
+
+class Employee:
+    def __init__(self,role, department, salary):
+        self.role=role
+        self.department=department
+        self.salary=salary
+
+    def showDetails(self):
+        print("Employee Role=", self.role)
+        print("Employee Deparment=", self.department)
+        print("Employee salary=", self.salary)
+
+
+Emp1=Employee("Manager", "IT", "11,00,000 P/A")
+Emp1.showDetails()
