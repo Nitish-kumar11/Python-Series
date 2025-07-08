@@ -134,4 +134,33 @@ print(odr1 > odr2)    #if order 1 is greater than order2 then this program print
   
 print()
 
+#Example 
+ 
+class Order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
 
+    def __gt__(self, other):
+        return self.price > other.price
+
+    def show(self):
+        print(f"Item: {self.item}, Price: {self.price}")
+
+
+    # Create two orders 
+order1 = Order("Laptop", 50000)
+order2 = Order("Tablet", 30000)
+
+# Display orders
+order1.show()
+order2.show()
+
+#uses of if else
+if order1 > order2:  # Compare using >
+    print("Order1 is more expensive than Order2")
+else:
+    print("Order1 is not more expensive than Order2")
+
+
+print("Thanks for coming visit next time.. with love")
